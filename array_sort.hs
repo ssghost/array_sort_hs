@@ -1,3 +1,5 @@
+module ArraySort where
+
 qsort :: Ord a => [a] -> [a]
 qsort [] = []
 qsort [x] = [x]
@@ -39,4 +41,3 @@ interleave :: [a] -> [b] -> [a, b]
 interleave [] ys = ys
 interleave xs [] = xs
 interleave (x:xs) ys = x : interleave ys xs
-
